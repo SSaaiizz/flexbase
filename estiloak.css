@@ -5,16 +5,50 @@
 .flex {
     border: 2px solid black;
     margin-right: 10px;
-    color: black;
+    color: rgb(0, 0, 0);
     padding-left: 5px
 }  
 
 .left {
     flex: 0.25;
-    background-color: lightgreen;
+    background-color: white;
 }
 
 .right {
     flex: 0.75;
-    background-color: lightblue;
+    background-color: white;
 } 
+
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+input[type="text"] {
+    width: calc(100% - 10px); /* Asegurarse de que el campo no exceda el ancho del formulario */
+    padding: 5px;
+    margin-top: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.buttons {
+    margin-top: 20px;
+    text-align: center; /* Centrar los botones */
+}
+.buttons input {
+    padding: 5px 15px;
+    margin-right: 5px;
+    border: 1px solid #333;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.buttons input:hover {
+    background-color: #ddd;
+    border-color: #000;
+}
